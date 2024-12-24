@@ -6,7 +6,13 @@ module.exports = {
 				Karla: ["Karla", " serif"],
 			},
 			colors: {
-				"light-coffee": "#C89F94",
+				"coffee": {
+					50: "#E8D6D0",
+					200: "#C89F94",
+					400: "#A25F4B",
+					600: "#744838",
+
+				},
 			},
 			keyframes: {
 				slideDown: {
@@ -18,8 +24,8 @@ module.exports = {
 				slideDown: "slideDown 1s ease-in-out",
 			},
 			backgroundImage: {
-				'slider-bg': 'url("./images/slider1.jpg")',
-      }
+				"slider-bg": 'url("./images/slider1.jpg")',
+			},
 		},
 	},
 	plugins: [],
