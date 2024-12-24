@@ -23,13 +23,17 @@
 }
 
 .ct-subheadline {
-	@apply flex justify-center items-center mb-24
+	@apply flex justify-center items-center mb-24;
 }
 
 .ct-subheadline-deco-line {
-	@apply  w-8 h-px bg-gray-200
+	@apply w-8 h-px bg-gray-200;
 }
 
 .ct-subheadline-label {
-	@apply uppercase mx-4 tracking-widest text-gray-500 font-bold text-[12px] text-center
+	@apply uppercase mx-4 tracking-widest text-gray-500 font-bold text-xs text-center;
+}
+
+.ct-button {
+	@apply py-4 px-8  text-center uppercase tracking-wider text-[13px] font-semibold cursor-pointer hover:bg-opacity-90;
 }
