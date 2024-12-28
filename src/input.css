@@ -22,6 +22,7 @@
 	@apply absolute top-10 z-50 w-full text-center bg-white animate-slideDown;
 }
 
+/* Title line */
 .ct-subheadline {
 	@apply flex justify-center items-center mb-24;
 }
@@ -34,6 +35,7 @@
 	@apply uppercase mx-4 tracking-widest text-gray-500 font-bold text-xs text-center;
 }
 
+/* Button default */
 .ct-button {
 	@apply py-4 px-8  text-center uppercase tracking-wider text-[13px] font-semibold cursor-pointer hover:bg-opacity-90;
 }
