@@ -24,7 +24,7 @@
 
 /* Title line */
 .ct-subheadline {
-	@apply flex justify-center items-center mb-24;
+	@apply flex justify-center items-center my-24;
 }
 
 .ct-subheadline-deco-line {
@@ -38,4 +38,39 @@
 /* Button default */
 .ct-button {
 	@apply py-4 px-8  text-center uppercase tracking-wider text-[13px] font-semibold cursor-pointer hover:bg-opacity-90;
+}
+
+/* ct-parallax */
+#root {
+	@apply h-screen overflow-x-hidden overflow-y-auto;
+	perspective: 2px;
+}
+
+.ct-parallax,
+.ct-no-parallax {
+	@apply flex items-center justify-center relative flex-col;
+}
+
+.ct-parallax {
+	@apply h-[40vh];
+}
+
+.ct-no-parallax {
+	@apply h-auto z-[999] bg-white;
+}
+
+.ct-parallax-img {
+	@apply absolute w-full h-full z-[-1] bg-cover bg-center;
+	background-attachment: fixed;
+}
+
+@media (min-width: 1280px) {
+	.ct-parallax {
+		@apply h-[70vh];
+		transform-style: preserve-3d; /* Custom property */
+	}
+
+	.ct-parallax-img {
+		transform: translateZ(-1px) scale(1.5); /* Custom property */
+	}
 }
