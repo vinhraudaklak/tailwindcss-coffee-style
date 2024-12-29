@@ -18,13 +18,14 @@
 
 	<body>
 		<div id="root">
+			<!-- wrapper content 1 -->
 			<div
-				class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8"
+				class="ct-no-parallax content-wrapper font-Karla text-base mx-auto px-8"
 			>
 				<!-- Header -->
-				<header class="p-6 mx-auto">
+				<header class="p-6 mx-auto w-full max-w-screen-2xl">
 					<nav
-						class="flex flex-row justify-between items-center relative"
+						class="flex justify-between items-center relative"
 					>
 						<!-- Logo -->
 						<div
@@ -32,6 +33,7 @@
 						>
 							CoffeeStyle.
 						</div>
+
 						<!-- Menu -->
 						<ul
 							id="ct-top-menu"
@@ -56,9 +58,10 @@
 								<a href="#" class="">StyleGuide</a>
 							</li>
 						</ul>
+
 						<!-- Cart -->
 						<ul
-							class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 text-sm text-gray-500 font-medium uppercase"
+							class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 text-sm text-gray-500 font-medium uppercase lg:mr-6"
 						>
 							<li class="ct-top-menu-item">
 								<a href="" class="flex items-center">
@@ -109,767 +112,762 @@
 					</nav>
 				</header>
 
-				<!-- Container Contents -->
-				<main>
-					<!-- slider -->
+				<!-- slider -->
+				<div
+					class="h-[530px] w-full max-w-screen-2xl bg-[url('./images/slider1.jpg')] bg-cover bg-no-repeat bg-bottom"
+				>
 					<div
-						class="slider h-[530px] bg-[url('./images/slider1.jpg')] bg-cover bg-no-repeat bg-bottom mb-24"
+						class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40"
 					>
-						<div
-							class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40"
-						>
-							<div class="mx-16 text-white text-center">
-								<div class="uppercase mb-6">
-									Best place to buy coffee
-								</div>
-								<div class="font-medium text-5xl mb-6">
-									Coffee Mugs
-								</div>
-								<div class="font-medium text-lg mb-8">
-									The most versatile furniture system ever
-									created. Designed to fit your life, made to
-									move and grow.
-								</div>
-								<div class="flex justify-center">
-									<div
-										class="ct-button bg-white text-gray-900 w-max"
-									>
-										Explore Our Products
-									</div>
+						<div class="mx-16 text-white text-center">
+							<div class="uppercase mb-6">
+								Best place to buy coffee
+							</div>
+							<div class="font-medium text-5xl mb-6">
+								Coffee Mugs
+							</div>
+							<div class="font-medium text-lg mb-8">
+								The most versatile furniture system ever
+								created. Designed to fit your life, made to move
+								and grow.
+							</div>
+							<div class="flex justify-center">
+								<div
+									class="ct-button bg-white text-gray-900 w-max"
+								>
+									Explore Our Products
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<!-- story -->
-					<div class="ct-subheadline">
-						<div class="ct-subheadline-deco-line"></div>
-						<div class="ct-subheadline-label">
-							Coffee Styles stories
+				<!-- story -->
+				<div class="ct-subheadline">
+					<div class="ct-subheadline-deco-line"></div>
+					<div class="ct-subheadline-label">
+						Coffee Styles stories
+					</div>
+					<div class="ct-subheadline-deco-line"></div>
+				</div>
+
+				<div
+					class="flex flex-col md:flex-row justify-center items-center w-[95%] lg:w-[65%] mx-auto  gap-12 md:gap-4"
+				>
+					<div class="basis-1/2">
+						<!-- Tự chạy - tắt tiếng - lặp lại -->
+						<video
+							class="w-full h-full object-cover min-h-[350px]"
+							src="./videos/video1.mp4"
+							autoplay
+							muted
+							loop
+						></video>
+					</div>
+
+					<div class="text-center md:text-left md:pl-8 basis-1/2">
+						<div class="text-3xl leading-10 mb-6 px-6 md:px-0">
+							What is your most special coffee?
 						</div>
-						<div class="ct-subheadline-deco-line"></div>
-					</div>
-
-					<div
-						class="flex flex-col md:flex-row justify-center items-center w-[95%] lg:w-[65%] mx-auto mb-24 gap-12 md:gap-4"
-					>
-						<div class="basis-1/2">
-							<!-- Tự chạy - tắt tiếng - lặp lại -->
-							<video
-								class="w-full h-full object-cover min-h-[350px]"
-								src="./videos/video1.mp4"
-								autoplay
-								muted
-								loop
-							></video>
+						<div class="text-gray-500 leading-7 mb-6">
+							- Geisha Coffee: Originating from Ethiopia but
+							famously cultivated in Panama, Geisha beans are
+							prized for their floral and fruity notes, often
+							considered the pinnacle of specialty coffee.
+							<br />
+							- Black Ivory Coffee: Similar to Kopi Luwak, these
+							beans are digested by elephants, resulting in a
+							smooth, low-acidity coffee. It's one of the rarest
+							and most expensive coffees in the world.
 						</div>
-
-						<div class="text-center md:text-left md:pl-8 basis-1/2">
-							<div class="text-3xl leading-10 mb-6 px-6 md:px-0">
-								What is your most special coffee?
-							</div>
-							<div class="text-gray-500 leading-7 mb-6">
-								- Geisha Coffee: Originating from Ethiopia but
-								famously cultivated in Panama, Geisha beans are
-								prized for their floral and fruity notes, often
-								considered the pinnacle of specialty coffee.
-								<br />
-								- Black Ivory Coffee: Similar to Kopi Luwak,
-								these beans are digested by elephants, resulting
-								in a smooth, low-acidity coffee. It's one of the
-								rarest and most expensive coffees in the world.
-							</div>
-							<div class="">
-								<a
-									href="#"
-									class="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-full after:bg-coffee-50 hover:after:bg-coffee-400 after:transition-all after:ease-in-out after:duration-400"
-									>Read The Full Story</a
-								>
-							</div>
-						</div>
-					</div>
-
-					<!-- featured-mugs -->
-					<div class="ct-subheadline">
-						<div class="ct-subheadline-deco-line"></div>
-						<div class="ct-subheadline-label">Featured mugs</div>
-						<div class="ct-subheadline-deco-line"></div>
-					</div>
-
-					<div class="featured-mugs w-[95%] lg:w-[65%] mx-auto mb-24">
-						<div
-							class="grid grid-flow-col-1 lg:grid-cols-2 gap-8 lg:gap-4"
-						>
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[400px] sm:h-[540px] bg-[url('./images/featured2jpg.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Pink Premium Ceramic
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-gray-500"
-											>$99.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[400px] sm:h-[540px] bg-[url('./images/featured1.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="absolute w-[100px] bg-white px-4 py-2 top-3 right-3 text-center font-semibold text-coffee-400"
-											>
-												On Sale
-											</div>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center mt-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Golden Designers Mug x
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-xl text-coffee-400"
-											>$50.00</span
-										>
-										<span
-											class="ml-2 text-gray-400 line-through"
-											>$69.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- more-products -->
-					<div class="ct-subheadline">
-						<div class="ct-subheadline-deco-line"></div>
-						<div class="ct-subheadline-label">more products</div>
-						<div class="ct-subheadline-deco-line"></div>
-					</div>
-
-					<div class="more-products w-[95%] xl:w-[65%] mx-auto mb-16">
-						<div
-							class="grid grid-flow-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4"
-						>
-							<!-- Card item -->
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[380px] bg-[url('./images/moreProduct1.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="absolute w-[100px] bg-white px-4 py-2 top-3 right-3 text-center font-semibold text-coffee-400"
-											>
-												On Sale
-											</div>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Red Love Cup
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-xl text-coffee-400"
-											>$25.00 USD</span
-										>
-										<span
-											class="ml-2 text-gray-400 line-through"
-											>$37.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[380px] bg-[url('./images/moreProduct2.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="absolute w-[100px] bg-white px-4 py-2 top-3 right-3 text-center font-semibold text-coffee-400"
-											>
-												On Sale
-											</div>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Black Tea Cup
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-xl text-coffee-400"
-											>$15.00</span
-										>
-										<span
-											class="ml-2 text-gray-400 line-through"
-											>$29.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[380px] bg-[url('./images/moreProduct3.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											B&W Essentials Mug
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-gray-500"
-											>$19.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[380px] bg-[url('./images/moreProduct4.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Winter Style Mug
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-gray-500"
-											>$25.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[380px] bg-[url('./images/moroProduct5.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Ceramic Tea
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-gray-500"
-											>$46.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[380px] bg-[url('./images/moreProduct6.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											No Handle Bar Cup
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-gray-500"
-											>$34.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[380px] bg-[url('./images/moreProduct7.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Espresso Cup by Mugs.co
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-gray-500"
-											>$25.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[380px] bg-[url('./images/featured2jpg.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Pink Premium Ceramic
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-gray-500"
-											>$99.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[380px] bg-[url('./images/moreProduct9.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Explore Mug
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-center my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Summer Designer Cup
-										</div>
-									</a>
-									<div class="ct-price-product">
-										<span class="text-gray-500"
-											>$29.00 USD</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- coffee-magazine -->
-					<div class="ct-subheadline">
-						<div class="ct-subheadline-deco-line"></div>
-						<div class="ct-subheadline-label">
-							Buy 2 mugs and get a coffee magazine free
-						</div>
-						<div class="ct-subheadline-deco-line"></div>
-					</div>
-
-					<div
-						class="coffee-magazine w-[95%] md:w-[85%] xl:w-[65%] mx-auto mb-24"
-					>
-						<div
-							class="flex flex-col md:flex-row justify-center items-center gap-5"
-						>
-							<!-- wrap images -->
-							<div
-								class="basis-1/2 flex flex-col md:flex-row gap-3 xs:gap-5 w-full h-full mb-5 md:mb-0"
+						<div class="">
+							<a
+								href="#"
+								class="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-full after:bg-coffee-50 hover:after:bg-coffee-400 after:transition-all after:ease-in-out after:duration-400"
+								>Read The Full Story</a
 							>
-								<!-- Big img -->
+						</div>
+					</div>
+				</div>
+
+				<!-- featured-mugs -->
+				<div class="ct-subheadline">
+					<div class="ct-subheadline-deco-line"></div>
+					<div class="ct-subheadline-label">Featured mugs</div>
+					<div class="ct-subheadline-deco-line"></div>
+				</div>
+
+				<div class="featured-mugs w-[95%] lg:w-[65%] mx-auto">
+					<div
+						class="grid grid-flow-col-1 lg:grid-cols-2 gap-8 lg:gap-4"
+					>
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[400px] sm:h-[540px] bg-[url('./images/featured2jpg.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Pink Premium Ceramic
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-gray-500"
+										>$99.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[400px] sm:h-[540px] bg-[url('./images/featured1.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="absolute w-[100px] bg-white px-4 py-2 top-3 right-3 text-center font-semibold text-coffee-400"
+										>
+											On Sale
+										</div>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center mt-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Golden Designers Mug x
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-xl text-coffee-400"
+										>$50.00</span
+									>
+									<span
+										class="ml-2 text-gray-400 line-through"
+										>$69.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- more-products -->
+				<div class="ct-subheadline">
+					<div class="ct-subheadline-deco-line"></div>
+					<div class="ct-subheadline-label">more products</div>
+					<div class="ct-subheadline-deco-line"></div>
+				</div>
+
+				<div class="more-products w-[95%] xl:w-[65%] mx-auto">
+					<div
+						class="grid grid-flow-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4"
+					>
+						<!-- Card item -->
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[380px] bg-[url('./images/moreProduct1.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="absolute w-[100px] bg-white px-4 py-2 top-3 right-3 text-center font-semibold text-coffee-400"
+										>
+											On Sale
+										</div>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Red Love Cup
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-xl text-coffee-400"
+										>$25.00 USD</span
+									>
+									<span
+										class="ml-2 text-gray-400 line-through"
+										>$37.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[380px] bg-[url('./images/moreProduct2.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="absolute w-[100px] bg-white px-4 py-2 top-3 right-3 text-center font-semibold text-coffee-400"
+										>
+											On Sale
+										</div>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Black Tea Cup
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-xl text-coffee-400"
+										>$15.00</span
+									>
+									<span
+										class="ml-2 text-gray-400 line-through"
+										>$29.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[380px] bg-[url('./images/moreProduct3.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										B&W Essentials Mug
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-gray-500"
+										>$19.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[380px] bg-[url('./images/moreProduct4.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Winter Style Mug
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-gray-500"
+										>$25.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[380px] bg-[url('./images/moroProduct5.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Ceramic Tea
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-gray-500"
+										>$46.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[380px] bg-[url('./images/moreProduct6.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										No Handle Bar Cup
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-gray-500"
+										>$34.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[380px] bg-[url('./images/moreProduct7.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Espresso Cup by Mugs.co
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-gray-500"
+										>$25.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[380px] bg-[url('./images/featured2jpg.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Pink Premium Ceramic
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-gray-500"
+										>$99.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[380px] bg-[url('./images/moreProduct9.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
+									<div
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
+									>
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Explore Mug
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-center my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Summer Designer Cup
+									</div>
+								</a>
+								<div class="ct-price-product">
+									<span class="text-gray-500"
+										>$29.00 USD</span
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- coffee-magazine -->
+				<div class="ct-subheadline">
+					<div class="ct-subheadline-deco-line"></div>
+					<div class="ct-subheadline-label">
+						Buy 2 mugs and get a coffee magazine free
+					</div>
+					<div class="ct-subheadline-deco-line"></div>
+				</div>
+
+				<div
+					class="coffee-magazine w-[95%] md:w-[85%] xl:w-[65%] mx-auto mb-24"
+				>
+					<div
+						class="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-5"
+					>
+						<!-- wrap images -->
+						<div
+							class="basis-1/2 flex flex-col md:flex-row gap-3 xs:gap-5 w-full h-full mb-5 md:mb-0"
+						>
+							<!-- Big img -->
+							<div
+								class="md:basis-2/3 h-[280px] bg-[url('./images/magazine1.jpg')] bg-cover bg-no-repeat bg-center"
+							></div>
+
+							<!-- small imgs -->
+							<div
+								class="md:basis-1/3 flex flex-grow md:flex-col gap-3 xs:gap-5"
+							>
 								<div
-									class="md:basis-2/3 h-[280px] bg-[url('./images/magazine1.jpg')] bg-cover bg-no-repeat bg-center"
+									class="h-[130px] xs:h-[200px] md:h-[130px] basis-1/2 bg-[url('./images/magazine2.jpg')] bg-cover bg-no-repeat bg-center"
 								></div>
-
-								<!-- small imgs -->
 								<div
-									class="md:basis-1/3 flex flex-grow md:flex-col gap-3 xs:gap-5"
-								>
-									<div
-										class="h-[130px] xs:h-[200px] md:h-[130px] basis-1/2 bg-[url('./images/magazine2.jpg')] bg-cover bg-no-repeat bg-center"
-									></div>
-									<div
-										class="h-[130px] xs:h-[200px] md:h-[130px] basis-1/2 bg-[url('./images/magazine3.jpg')] bg-cover bg-no-repeat bg-center"
-									></div>
-								</div>
+									class="h-[130px] xs:h-[200px] md:h-[130px] basis-1/2 bg-[url('./images/magazine3.jpg')] bg-cover bg-no-repeat bg-center"
+								></div>
 							</div>
+						</div>
 
-							<!-- wrap contents -->
+						<!-- wrap contents -->
+						<div
+							class="ct-wrap-content basis-1/2 md:pl-8 xl:pl-14 flex flex-col items-center md:items-start"
+						>
 							<div
-								class="ct-wrap-content basis-1/2 md:pl-8 xl:pl-14 flex flex-col items-center md:items-start"
+								class="uppercase tracking-widest text-gray-500 font-bold text-xs mb-4"
 							>
-								<div
-									class="uppercase tracking-widest text-gray-500 font-bold text-xs mb-4"
-								>
-									Premium Offer
-								</div>
-								<div class="text-3xl mb-4">
-									Get our Coffee Magazine
-								</div>
-								<div class="text-gray-500 leading-7 mb-6">
-									The most versatile furniture system ever
-									created. Designed to fit your life.
-								</div>
-								<div
-									class="ct-button bg-black text-white w-max"
-								>
-									Start Shopping
-								</div>
+								Premium Offer
+							</div>
+							<div class="text-3xl mb-4 text-center md:text-left">
+								Get our Coffee Magazine
+							</div>
+							<div class="text-gray-500 leading-7 mb-6 text-center md:text-left">
+								The most versatile furniture system ever
+								created. Designed to fit your life.
+							</div>
+							<div class="ct-button bg-black text-white w-max">
+								Start Shopping
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		
+			<!-- section background parallax-->
+			<div class="ct-parallax">
+				<div class="ct-parallax-img bg-[url('./images/backgroud1.jpg')]"> </div>
+			</div>
 
-					<!-- section background parallax-->
-					<div
-						class="h-[400px] lg:h-[500px] bg-[url('./images/backgroud1.jpg')] bg-cover bg-no-repeat bg-center mb-24 bg-fixed w-[100vw] relative left-[calc(-50vw+50%)]"
-					></div>
-
-					<!-- lifestyle-stories -->
-					<div class="ct-subheadline">
-						<div class="ct-subheadline-deco-line"></div>
-						<div class="ct-subheadline-label">
-							Behind the mugs, lifestyle stories
-						</div>
-						<div class="ct-subheadline-deco-line"></div>
+			<!-- Wrapper content 2 -->
+			<div
+			class="ct-no-parallax content-wrapper font-Karla text-base mx-auto px-8"
+			>
+				<!-- lifestyle-stories -->
+				<div class="ct-subheadline">
+					<div class="ct-subheadline-deco-line"></div>
+					<div class="ct-subheadline-label">
+						Behind the mugs, lifestyle stories
 					</div>
+					<div class="ct-subheadline-deco-line"></div>
+				</div>
 
+				<div class="lifestyle-stories w-[95%] xl:w-[65%] mx-auto mb-24">
 					<div
-						class="lifestyle-stories w-[95%] xl:w-[65%] mx-auto mb-24"
+						class="grid grid-flow-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4"
 					>
-						<div
-							class="grid grid-flow-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4"
-						>
-							<!-- item lifestyles-card -->
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[300px] bg-[url('./images/stories1.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Read The Full Story
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-left my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Health Check: why do I get a
-											headache when I haven&apos; had my
-											coffee?
-										</div>
-									</a>
-									<div class="text-gray-500 leading-7 mb-3">
-										It is a paradisematic country, in which
-										roasted parts of sentences fly into your
-										mouth.
-									</div>
+						<!-- item lifestyles-card -->
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[300px] bg-[url('./images/stories1.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
 									<div
-										class="text-gray-500 leading-7 uppercase text-[13px] font-semibold tracking-widest"
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
 									>
-										October 9, 2024
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Read The Full Story
+										</div>
 									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-left my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Health Check: why do I get a headache
+										when I haven&apos; had my coffee?
+									</div>
+								</a>
+								<div class="text-gray-500 leading-7 mb-3">
+									It is a paradisematic country, in which
+									roasted parts of sentences fly into your
+									mouth.
+								</div>
+								<div
+									class="text-gray-500 leading-7 uppercase text-[13px] font-semibold tracking-widest"
+								>
+									October 9, 2024
 								</div>
 							</div>
+						</div>
 
-							<!-- item lifestyles-card -->
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[300px] bg-[url('./images/stories2.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Read The Full Story
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-left my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											How long does a cup of coffee keep
-											you awake?
-										</div>
-									</a>
-									<div class="text-gray-500 leading-7 mb-3">
-										It is a paradisematic country, in which
-										roasted parts. Vel qui et ad voluptatem.
-									</div>
+						<!-- item lifestyles-card -->
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[300px] bg-[url('./images/stories2.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
 									<div
-										class="text-gray-500 leading-7 uppercase text-[13px] font-semibold tracking-widest"
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
 									>
-										October 9, 2024
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Read The Full Story
+										</div>
 									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-left my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										How long does a cup of coffee keep you
+										awake?
+									</div>
+								</a>
+								<div class="text-gray-500 leading-7 mb-3">
+									It is a paradisematic country, in which
+									roasted parts. Vel qui et ad voluptatem.
+								</div>
+								<div
+									class="text-gray-500 leading-7 uppercase text-[13px] font-semibold tracking-widest"
+								>
+									October 9, 2024
 								</div>
 							</div>
+						</div>
 
-							<!-- item lifestyles-card -->
-							<div class="ct-product-card">
-								<!-- img card -->
-								<div
-									class="h-[300px] bg-[url('./images/stories3jpg.jpg')] bg-cover bg-no-repeat bg-center"
-								>
-									<a href="#" alt="img.error">
-										<!-- Sử dụng group hover. -->
-										<div
-											class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
-										>
-											<div
-												class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
-											>
-												Read The Full Story
-											</div>
-										</div>
-									</a>
-								</div>
-								<!-- Name/Price card -->
-								<div class="text-left my-8">
-									<a href="#" alt="error-img-product">
-										<div
-											class="text-xl mb-3 hover:text-coffee-400"
-										>
-											Recent research suggests that heavy
-											coffee drinkers may reap health
-											benefits.
-										</div>
-									</a>
-									<div class="text-gray-500 leading-7 mb-3">
-										It is a paradisematic country, in which
-										roasted parts of sentences fly into your
-										mouth.
-									</div>
+						<!-- item lifestyles-card -->
+						<div class="ct-product-card">
+							<!-- img card -->
+							<div
+								class="h-[300px] bg-[url('./images/stories3jpg.jpg')] bg-cover bg-no-repeat bg-center"
+							>
+								<a href="#" alt="img.error">
+									<!-- Sử dụng group hover. -->
 									<div
-										class="text-gray-500 leading-7 uppercase text-[13px] font-semibold tracking-widest"
+										class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group"
 									>
-										October 9, 2024
+										<div
+											class="ct-button absolute bg-white text-gray-900 w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn"
+										>
+											Read The Full Story
+										</div>
 									</div>
+								</a>
+							</div>
+							<!-- Name/Price card -->
+							<div class="text-left my-8">
+								<a href="#" alt="error-img-product">
+									<div
+										class="text-xl mb-3 hover:text-coffee-400"
+									>
+										Recent research suggests that heavy
+										coffee drinkers may reap health
+										benefits.
+									</div>
+								</a>
+								<div class="text-gray-500 leading-7 mb-3">
+									It is a paradisematic country, in which
+									roasted parts of sentences fly into your
+									mouth.
+								</div>
+								<div
+									class="text-gray-500 leading-7 uppercase text-[13px] font-semibold tracking-widest"
+								>
+									October 9, 2024
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<!-- subscribe-us -->
-					<div class="bg-[#1d1f2e] mb-24 py-20 px-12 text-center">
-						<div class="flex justify-center items-center">
-							<div class="w-8 h-px bg-gray-700"></div>
-							<div
-								class="uppercase mx-4 tracking-widest text-gray-400 font-bold text-xs text-center"
-							>
-								Sign up and get free coffee bags
-							</div>
-							<div class="w-8 h-px bg-gray-700"></div>
-						</div>
-
-						<div class="text-4xl my-8 text-white">
-							Coffee Updates
-						</div>
-
+				<!-- subscribe-us -->
+				<div class="bg-[#1d1f2e] w-full max-w-screen-2xl mb-24 py-20 px-12 text-center">
+					<div class="flex justify-center items-center">
+						<div class="w-8 h-px bg-gray-700"></div>
 						<div
-							class="flex flex-col md:flex-row justify-center gap-2.5"
+							class="uppercase mx-4 tracking-widest text-gray-400 font-bold text-xs text-center"
 						>
-							<input
-								type="email"
-								class="py-4 px-8 bg-inherit min-w-full md:min-w-[350px] border-[0.5px] border-gray-700 outline-none text-white hover:border-gray-400 duration-500 focus:border-gray-400 placeholder:uppercase placeholder:text-xs placeholder:tracking-widest placeholder:font-bold placeholder:text-center md:placeholder:text-left"
-								placeholder="VihNguyEn1999@gmail.com"
-							/>
-							<div
-								type="submit"
-								class="ct-button bg-white text-gray-900 w-[100%] md:w-max"
-							>
-								subscribe
-							</div>
+							Sign up and get free coffee bags
+						</div>
+						<div class="w-8 h-px bg-gray-700"></div>
+					</div>
+
+					<div class="text-4xl my-8 text-white">Coffee Updates</div>
+
+					<div
+						class="flex flex-col md:flex-row justify-center gap-2.5"
+					>
+						<input
+							type="email"
+							class="py-4 px-8 bg-inherit min-w-full md:min-w-[350px] border-[0.5px] border-gray-700 outline-none text-white hover:border-gray-400 duration-500 focus:border-gray-400 placeholder:uppercase placeholder:text-xs placeholder:tracking-widest placeholder:font-bold placeholder:text-center md:placeholder:text-left"
+							placeholder="VihNguyEn1999@gmail.com"
+						/>
+						<div
+							type="submit"
+							class="ct-button bg-white text-gray-900 w-[100%] md:w-max"
+						>
+							subscribe
 						</div>
 					</div>
-				</main>
+				</div>
 
 				<!-- Footer -->
 				<footer
@@ -989,7 +987,9 @@
 						</div>
 					</div>
 				</footer>
+				
 			</div>
+
 		</div>
 		<!-- End root -->
 	</body>
